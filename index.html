@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pattern library</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css css/vendor.min.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:css css/style.min.css -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- endbuild -->
+
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="app">
+				<div class="data"></div> <!-- .data -->
+
+				<div class="landing">
+					<button class="btn" id="button-login">Login </button>
+					<button class="btn" id="button-signup">Sign up</button>
+				</div> <!-- .landing -->
+
+				<div class="form-login">
+					<h2>Login</h2>
+
+					<form id="form-login">
+						<fieldset>
+							<div class="field-group">
+								<label for="email">Email</label>
+								<input type="email" placeholder="email">
+							</div>
+
+							<div class="field-group">
+								<label for="">Password</label>
+								<input type="password" placeholder="password">
+							</div>
+
+							<div class="field-group">
+								<input class="btn" type="submit" value="Submit">
+							</div>
+						</fieldset>	
+					</form>
+				</div> <!-- .form-login -->
+
+				<div class="form-signup">
+					<h2>Sign up</h2>
+
+					<form id="form-signup">
+						<fieldset>
+							<div class="field-group">
+								<label for="email">Email</label>
+								<input type="email" placeholder="email">
+							</div>
+
+							<div class="field-group">
+								<label for="">Password</label>
+								<input type="password" placeholder="password">
+							</div>
+
+							<div class="field-group">
+								<input type="submit" value="Submit">
+							</div>
+						</fieldset>	
+					</form>
+				</div> <!-- .form-signup -->
+			</div> <!-- .app -->
+		</div> <!-- .container -->
+
+		<!-- build:js js/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:js js/main.min.js -->
+		<script src="js/main.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>

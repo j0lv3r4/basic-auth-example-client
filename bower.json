@@ -1,0 +1,32 @@
+{
+  "name": "pattern-library",
+  "version": "0.1.0",
+  "authors": [
+    "Juan Olvera <thinkxl@gmail.com>"
+  ],
+  "description": "pattern library for personal projects",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "html5",
+    "boilerplate",
+    "sass",
+    "grunt"
+  ],
+  "license": "MIT",
+  "homepage": "http://thinkxl.github.io/html5-starter/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "normalize.css": "latest",
+    "hyx.scss": "latest",
+    "fontawesome": "latest"
+  }
+}

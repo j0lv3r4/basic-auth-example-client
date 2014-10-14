@@ -1,0 +1,12 @@
+@import "../variables";
+
+.container {
+	margin: 10em auto;
+	max-width: $site-width;
+	background-color: #eee;
+}
+
+.form-login,
+.form-signup {
+	display: none;
+}

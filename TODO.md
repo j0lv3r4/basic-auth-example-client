@@ -1,0 +1,5 @@
+- [ ] Add tabs
+- [ ] Add slider
+- [ ] Add horizontal and vertical navigation
+- [ ] On `_typography.scss` line 35 change to `$base-line-height;`
+- [ ] Fix buttons styles
