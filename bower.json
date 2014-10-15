@@ -28,5 +28,9 @@
     "normalize.css": "latest",
     "hyx.scss": "latest",
     "fontawesome": "latest"
+  },
+  "devDependencies": {
+    "backbone": "~1.1.2",
+    "underscore": "~1.7.0"
   }
 }

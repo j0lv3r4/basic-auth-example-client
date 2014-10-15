@@ -18,74 +18,35 @@
 		<link rel="stylesheet" href="css/style.css">
 		<!-- endbuild -->
 
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css">
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
-		<script>hljs.initHighlightingOnLoad();</script>
+		<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css"> -->
+		<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script> -->
+		<!-- <script>hljs.initHighlightingOnLoad();</script> -->
 	</head>
 	<body>
 
 		<div class="container">
-			<div class="app">
-				<div class="data"></div> <!-- .data -->
-
-				<div class="landing">
-					<button class="btn" id="button-login">Login </button>
-					<button class="btn" id="button-signup">Sign up</button>
-				</div> <!-- .landing -->
-
-				<div class="form-login">
-					<h2>Login</h2>
-
-					<form id="form-login">
-						<fieldset>
-							<div class="field-group">
-								<label for="email">Email</label>
-								<input type="email" placeholder="email">
-							</div>
-
-							<div class="field-group">
-								<label for="">Password</label>
-								<input type="password" placeholder="password">
-							</div>
-
-							<div class="field-group">
-								<input class="btn" type="submit" value="Submit">
-							</div>
-						</fieldset>	
-					</form>
-				</div> <!-- .form-login -->
-
-				<div class="form-signup">
-					<h2>Sign up</h2>
-
-					<form id="form-signup">
-						<fieldset>
-							<div class="field-group">
-								<label for="email">Email</label>
-								<input type="email" placeholder="email">
-							</div>
-
-							<div class="field-group">
-								<label for="">Password</label>
-								<input type="password" placeholder="password">
-							</div>
-
-							<div class="field-group">
-								<input type="submit" value="Submit">
-							</div>
-						</fieldset>	
-					</form>
-				</div> <!-- .form-signup -->
-			</div> <!-- .app -->
+      <div class="app"></div> <!-- .app -->
 		</div> <!-- .container -->
 
 		<!-- build:js js/vendor.js -->
 		<!-- bower:js -->
 		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/underscore/underscore-min.js"></script>
+		<script src="bower_components/backbone/backbone.js"></script>
+		<script src="js/extras/base64.js"></script>
+		<script src="js/extras/sha-256.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 
 		<!-- build:js js/main.min.js -->
+		<script src="js/toolbox.js"></script>
+		<script src="js/templates/templates.js"></script>
+		<script src="js/views/form-login.js"></script>
+		<script src="js/views/form-signup.js"></script>
+		<script src="js/views/app.js"></script>
+		<script src="js/views/index.js"></script>
+		<script src="js/routes/routes.js"></script>
+		<script src="js/models/user.js"></script>
 		<script src="js/main.js"></script>
 		<!-- endbuild -->
 	</body>
