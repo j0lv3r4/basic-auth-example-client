@@ -19,7 +19,7 @@ var FormSignupView = Backbone.View.extend({
   signup: function(e) {
     e.preventDefault();
 
-    var serverEndpoint = "http://0.0.0.0:8080/create";
+    var serverEndpoint = "http://0.0.0.0:8080/signup";
 
     var email = this.$el.find('form').find('input[type="email"]').val(),
       password = this.$el.find('form').find('input[type="password"]').val(),
