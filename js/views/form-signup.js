@@ -19,7 +19,7 @@ var FormSignupView = Backbone.View.extend({
   signup: function(e) {
     e.preventDefault();
 
-    var serverEndpoint = "http://0.0.0.0:8080/signup";
+    var serverEndpoint = "http://0.0.0.0:8080/api/user/";
 
     var email = this.$el.find('form').find('input[type="email"]').val(),
       password = this.$el.find('form').find('input[type="password"]').val(),
@@ -41,11 +41,8 @@ var FormSignupView = Backbone.View.extend({
       data: { email: email, password: password_hashed },
       type: 'POST',
       success: function(data) {
-        if (data.status === 200) {
-          $feedback.html("<div class='alert-success'>" + data.message + "</div>");
-        } else {
-          $feedback.html("<div class='alert-error'>" + data.message + "</div>");
-        }
+        console.log(data)
+        $feedback.html("<div class='alert-success'>User Created! :)</div>");
       },
       error: function(jqXHR, textStatus, errorThrown) {
         console.log(jqXHR);

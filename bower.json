@@ -27,7 +27,8 @@
     "jquery": "~2.1.1",
     "normalize.css": "latest",
     "hyx.scss": "latest",
-    "fontawesome": "latest"
+    "fontawesome": "latest",
+    "backbone.basicauth": "~0.4.0"
   },
   "devDependencies": {
     "backbone": "~1.1.2",

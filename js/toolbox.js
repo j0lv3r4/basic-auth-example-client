@@ -17,6 +17,8 @@ var toolbox = {
   },
 
   passhash: function(username, password) {
-    return SHA256(toolbox.slugify(username) + ":" + password);
+    if (password) {
+      return SHA256(toolbox.slugify(username) + ":" + password);
+    }
   }
-};
+}
