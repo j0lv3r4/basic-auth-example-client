@@ -16,7 +16,7 @@ Templates.form = [
       "</div> <!-- .field-group -->",
       "<div class='field-group'>",
         "<label for='password'>Password</label>",
-        "<input type='password' placeholder='yourpassword' value='diego1983'>",
+        "<input type='password' placeholder='yourpassword' value='secr3t'>",
       "</div> <!-- .field-group -->",
       "<div class='field-group'>",
         "<input type='submit' value='Submit'>",
