@@ -6,6 +6,8 @@ var Templates = {};
 Templates.form = [
   "<a href='/'>Home</a>",
   "<h2>{{ title }}</h2>",
+  "<div class='feedback'>",
+  "</div> <!-- .alert-error -->",
   "<form id='{{ form }}'>",
     "<fieldset>",
       "<div class='field-group'>",

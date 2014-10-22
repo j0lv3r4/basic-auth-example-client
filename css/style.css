@@ -639,6 +639,10 @@ img {
 .form-signup {
   display: none; }
 
+.form-signup-container {
+  padding: 1rem;
+  border-radius: 4px; }
+
 /*! Hyx v1.0.2 | MIT License | http://github.com/thinkxl/hyx */
 .row {
   width: 100%; }
