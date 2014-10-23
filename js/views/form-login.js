@@ -21,7 +21,8 @@ var FormLoginView = Backbone.View.extend({
 
     var email = this.$el.find('form').find('input[type="email"]').val(),
       password = this.$el.find('form').find('input[type="password"]').val(),
-      password_hashed = toolbox.passhash(email, password);
+      password_hashed = toolbox.passhash(email, password),
+      $feedback = $('.feedback');
 
     var auth = 'Basic ' + btoa(email + ":" + password_hashed)
 
@@ -39,12 +40,12 @@ var FormLoginView = Backbone.View.extend({
       }
     })
     .done(function(data) {
-      console.log("done")
-      console.log(data); 
+      var token = data.token;
+      localStorage.setItem('token', token);
     })
     .fail(function(data) {
       console.log("fail")
-      console.log(data); 
+      $feedback.html("<div class='alert-error'>Wrong username or password.</div>");
     })
   }
 });
