@@ -20,5 +20,20 @@ var toolbox = {
     if (password) {
       return SHA256(toolbox.slugify(username) + ":" + password);
     }
+  },
+
+  saveToken: function(id, token) {
+    if (_.isString(token) && _.isString(id)) {
+      localStorage.set(id, token);
+    }             
+  },
+
+  getToken: function(id) {
+    if (_.isString(id)) {
+      var token = localStorage.get(id);
+      return token;
+    } else {
+      throw "Invalid ID";
+    }
   }
-}
+};

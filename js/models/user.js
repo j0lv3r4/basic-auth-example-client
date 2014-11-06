@@ -1,11 +1,15 @@
 var User = Backbone.Model.extend({
   defaults: {
     email: "",
-    password: ""
+    password: "",
+    role: "",
+    data: {
+      quotes: 0 
+    }
   }
 });
 
 var Users = Backbone.Collection.extend({
   model: User,
-  url: ""
+  url: "/api/v1/user"
 });

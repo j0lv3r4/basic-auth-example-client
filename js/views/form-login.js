@@ -42,6 +42,8 @@ var FormLoginView = Backbone.View.extend({
     .done(function(data) {
       var token = data.token;
       localStorage.setItem('token', token);
+      console.log(data);
+      location.href = "#app";
     })
     .fail(function(data) {
       console.log("fail")

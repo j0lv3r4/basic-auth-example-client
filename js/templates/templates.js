@@ -4,7 +4,7 @@ var Templates = {};
 
 // "form-login" or "form-signup"
 Templates.form = [
-  "<a href='/'>Home</a>",
+  "<a href='#'>Home</a>",
   "<h2>{{ title }}</h2>",
   "<div class='feedback'>",
   "</div> <!-- .alert-error -->",
@@ -26,8 +26,17 @@ Templates.form = [
 ].join('');
 
 Templates.index = [
+  "<p><a class='btn' href='#'>Home</a></p>",
   "<p><a class='btn' href='#login'>Login</a></p>",
   "<p><a class='btn' href='#signup'>Signup</a></p>"
+].join('');
+
+Templates.app = [
+  "<div class='app-container'>",
+    "<h1>APP</h1>",
+    "<hr>",
+    "<button class='request-button'>button</button>",
+  "</div> <!-- .app-container -->"
 ].join('');
 
 for (var temp in Templates) {

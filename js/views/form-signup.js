@@ -43,6 +43,7 @@ var FormSignupView = Backbone.View.extend({
       success: function(data) {
         console.log(data)
         $feedback.html("<div class='alert-success'>User Created! :)</div>");
+        location.href = "#login";
       },
       error: function(jqXHR, textStatus, errorThrown) {
         console.log(jqXHR);

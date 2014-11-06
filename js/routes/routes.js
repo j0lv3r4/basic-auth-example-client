@@ -13,7 +13,7 @@ var $app = $('.app'),
   },
 
   index: function() {
-    new AppView();
+    new IndexView();
   },
 
   login: function() {
@@ -28,7 +28,9 @@ var $app = $('.app'),
     $app.html(formSignupView.render().el);
   },
 
-  app: function() {},
+  app: function() {
+    new AppView();
+  },
 
   logout: function() {}
 });

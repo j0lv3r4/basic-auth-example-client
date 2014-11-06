@@ -1,4 +1,4 @@
-var AppView = Backbone.View.extend({
+var IndexView = Backbone.View.extend({
   el: '.app',
   initialize: function () {
    this.render(); 
